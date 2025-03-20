@@ -3,9 +3,8 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-	title: "Appcon Milan 2025 | Showcasing Ethereum Apps to the World",
-	description:
-		"Discover Ethereum apps at Appcon in Milan. Explore an interactive public showcase, connect through the exclusive Builders’ Program, and experience real-world demos—bridging new adopters, developers, and investors in one vibrant setting."
+	title: "Appcon Milan 2025 | Showing Ethereum Apps to the World",
+	description: "Discover the top Ethereum apps at Appcon in Milan, April 7-13."
 }
 
 export default function RootLayout({

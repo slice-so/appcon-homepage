@@ -1,3 +1,4 @@
+import { AppconLogo } from "@/components/appconLogo"
 import Farcaster from "@/components/farcaster"
 import { Particles } from "@/components/particles"
 import SliceLogo from "@/components/sliceLogo"
@@ -24,28 +25,25 @@ export default function Page() {
 			<div className="relative z-10 flex flex-col min-h-screen">
 				{/* Hero Section */}
 				<main className="flex-grow container mx-auto px-4 flex flex-col items-center justify-center space-y-12">
-					<div className="relative size-56 md:size-64">
-						<Image
-							src={logo}
-							alt="Appcon Logo"
-							fill
-							className="object-contain drop-shadow-2xl"
-							priority
-						/>
+					<div className="relative size-48 md:size-56">
+						<AppconLogo className="w-full h-full" />
 					</div>
 
 					<div className="text-center space-y-6 md:space-y-8 max-w-3xl">
-						<h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 to-yellow-200 bg-clip-text text-transparent">
+						<h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-[#CCB1FF] to-[#E7CCC2] bg-clip-text text-transparent">
 							Appcon
 						</h1>
-						<p className="text-xl md:text-2xl text-purple-200/90 font-medium tracking-wide">
+						<p className="text-2xl md:text-3xl bg-gradient-to-r from-[#C1C8FE] to-[#E7CCC2] bg-clip-text text-transparent font-light tracking-wide">
 							Showing Ethereum Apps to the World
 						</p>
 					</div>
 
-					<div className="space-y-8 text-center">
-						<p className="my-16 text-4xl md:text-5xl font-extralight tracking-widest text-white/60">
+					<div className="space-y-7 text-center">
+						<p className="mt-16 text-4xl md:text-5xl font-extralight tracking-widest text-white/60">
 							MILAN 2025
+						</p>
+						<p className="text-2xl md:text-3xl font-extralight tracking-widest text-white/60">
+							April 7-13
 						</p>
 						{/* <Button 
               variant="outline" 
@@ -73,7 +71,7 @@ export default function Page() {
 								rel="noopener noreferrer"
 							>
 								Slice
-								<SliceLogo className="inline-block ml-1.5 size-4" />
+								<SliceLogo className="inline-block ml-1.5 size-3.5" />
 							</a>
 						</p>
 						<a

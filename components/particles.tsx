@@ -148,3 +148,47 @@ export function Particles() {
 		/>
 	)
 }
+
+const particleLarge = ({
+	color1,
+	color2,
+	opacity1,
+	opacity2
+}: { color1: string; color2: string; opacity1: number; opacity2: number }) => {
+	return (
+		<>
+			<path
+				d="M60.5 267.5L243.5 267.5L108 347.5L60.5 267.5Z"
+				fill={color1}
+				style={{ opacity: opacity1 }}
+			/>
+			<path
+				d="M60.5 267.5L243.5 267.5L108 187.5L60.5 267.5Z"
+				fill={color2}
+				style={{ opacity: opacity2 }}
+			/>
+		</>
+	)
+}
+
+const particleSmall = ({
+	color1,
+	color2,
+	opacity1,
+	opacity2
+}: { color1: string; color2: string; opacity1: number; opacity2: number }) => {
+	return (
+		<>
+			<path
+				d="M447.628 90.1767L535.541 113.685L397.02 137.079L447.628 90.1767Z"
+				fill={color2}
+				style={{ opacity: opacity1 }}
+			/>
+			<path
+				d="M447.262 90.5165L429.814 0.339844L397.021 137.079L447.262 90.5165Z"
+				fill={color1}
+				style={{ opacity: opacity2 }}
+			/>
+		</>
+	)
+}
