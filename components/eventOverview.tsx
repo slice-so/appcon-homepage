@@ -1,6 +1,43 @@
+'use client';
+
 import Image from 'next/image';
 
 export function EventOverview() {
+  const handleCalendarDownload = () => {
+    const event = {
+      title: 'APPCON MILAN 2025',
+      description: 'Design Thinking in the Ethereum Age - Exhibition and Workshops',
+      location: 'Stecca3, BAM park, Isola District',
+      startDate: '2025-04-07T00:00:00',
+      endDate: '2025-04-13T23:59:59',
+    };
+
+    const icsContent = [
+      'BEGIN:VCALENDAR',
+      'VERSION:2.0',
+      'PRODID:-//Slice//MILAN 2025//EN',
+      'CALSCALE:GREGORIAN',
+      'BEGIN:VEVENT',
+      `UID:${Date.now()}@slice.com`,
+      `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+      `SUMMARY:${event.title}`,
+      `DESCRIPTION:${event.description}`,
+      `LOCATION:${event.location}`,
+      `DTSTART:${event.startDate.replace(/[-:]/g, '')}Z`,
+      `DTEND:${event.endDate.replace(/[-:]/g, '')}Z`,
+      'END:VEVENT',
+      'END:VCALENDAR',
+    ].join('\r\n');
+
+    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = window.URL.createObjectURL(blob);
+    link.setAttribute('download', 'milan-2025.ics');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="w-full py-16 bg-white/70">
       <div className="container mx-auto px-4 space-y-16">
@@ -11,7 +48,11 @@ export function EventOverview() {
           </p>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-lg ">
-            <div className="flex items-center">
+            <button 
+              type="button"
+              className="flex items-center cursor-pointer hover:text-purple-600 transition-colors bg-transparent border-none p-0"
+              onClick={handleCalendarDownload}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6 text-purple-600 mr-2"
@@ -29,7 +70,7 @@ export function EventOverview() {
                 />
               </svg>
               <span>April 7-13</span>
-            </div>
+            </button>
             <div className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,11 +134,13 @@ export function EventOverview() {
                 Workshops and talks will be held daily.
               </p>
               <div className="mt-4">
-                <p className="font-medium text-gray-800 mb-1">Design pieces and apps are grouped under 3 main themes:</p>
+                <p className="font-medium text-gray-800 mb-1">Design pieces and apps are grouped under 5 main themes:</p>
                 <ul className="list-disc list-inside text-gray-700 space-y-1 ml-2">
                   <li>Digital Creation</li>
-                  <li>Digital Identity & Social</li>
+                  <li>Social</li>
+                  <li>Identity & privacy</li>
                   <li>Communities & Crowdfunding</li>
+                  <li>Commerce</li>
                 </ul>
               </div>
             </div>

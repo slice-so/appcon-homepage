@@ -16,88 +16,108 @@ interface DaySchedule {
 const scheduleData: DaySchedule[] = [
   {
     date: 'April 7',
-    theme: 'Ethereum',
+    theme: 'Ethereum: The World Computer',
     schedule: [
       {
         time: '11:00 AM - 12:00 PM',
-        title: 'Intro to Ethereum, technology and use cases',
-        type: 'workshop',
-      },
-      {
-        time: '4:30 PM - 5:30 PM',
-        title: 'Debunk myths on cryptocurrencies',
+        title: 'Ethereum in the real world',
+        description: 'Moderators: Jacopo Ranalli (Founder, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Founder, Urbe.eth)',
         type: 'talk',
       },
       {
         time: '5:30 PM - 6:30 PM',
-        title:
-          'Beyond Speculation: Ethereum apps and an ecosystem for collective decision-making',
+        title: 'Beyond Speculation: Ethereum apps',
+        description: 'Moderators: Jacopo Ranalli (Founder, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Founder, Urbe.eth)',
         type: 'talk',
       },
     ],
   },
   {
     date: 'April 8',
-    theme: 'Commerce',
+    theme: 'The Future of Commerce',
     schedule: [
       {
-        time: '11:00 AM - 12:00 PM',
-        title: 'How to sell onchain',
-        description:
-          'In collaboration with local merchants from the DUC merchants association',
-        type: 'workshop',
-      },
-      {
-        time: '4:30 PM - 5:30 PM',
-        title: 'The future of commerce is on Ethereum',
+        time: 'Online',
+        title: 'Online Talk',
+        description: 'Chintan Turakhia (Senior Director of Engineering, Coinbase)',
         type: 'talk',
       },
       {
-        time: '5:30 PM - 6:30 PM',
-        title: 'Accept payments in cryptocurrencies',
+        time: '11:00 AM - 12:00 PM',
+        title: 'Launch your onchain store with Slice',
+        description: 'With: Slice / Jacopo, Coinbase and DUC. Max 30 people - Piazzetta',
+        type: 'workshop',
+      },
+      {
+        time: '2:30 PM - 3:30 PM',
+        title: 'The future of commerce is onchain',
+        description: 'Moderator: Jacopo Ranalli (Founder, Slice)',
+        type: 'talk',
+      },
+      {
+        time: '4:30 PM - 5:30 PM',
+        title: 'How real businesses are going onchain',
+        description: 'Moderators: Jacopo Ranalli (Founder, Slice), Marco Tullio Giordano (Lawyer, 42LF), Merchants onboarded during the workshop',
         type: 'talk',
       },
     ],
   },
   {
     date: 'April 9',
-    theme: 'Art and design',
+    theme: 'Decentralized Socials and Digital Communities',
     schedule: [
       {
+        time: 'Online',
+        title: 'Online Talks',
+        description: 'Dan Romero (Founder, Farcaster), Aneri Amin (Product Lead, Coinbase)',
+        type: 'talk',
+      },
+      {
         time: '11:00 AM - 12:00 PM',
-        title: 'Onchain art and tokenization',
+        title: 'Building a Digital Identity on Farcaster, for designers and artists',
+        description: 'With: Farcaster / Simone Staffa. Max 30 people - Piazzetta',
         type: 'workshop',
       },
       {
-        time: '4:30 PM - 5:30 PM',
-        title: 'Digitizing and Selling Your Creations on the Blockchain',
+        time: '2:30 PM - 3:30 PM',
+        title: 'The Rise of Decentralized Social Networks',
+        description: 'Moderators: Simone Staffa (Founder, Urbe.eth), Lorenzo Patuzzo (Akasha)',
         type: 'talk',
       },
       {
         time: '5:30 PM - 6:30 PM',
-        title: 'Art and Web3: Hype or Revolution?',
+        title: 'From Followers to DAO Members: The Future of Digital Participation',
+        description: 'Moderators: fattybuthappy (Nouns), 0XBA5ED (Juicebox), Lorenzo Patuzzo (Web3 community representative)',
         type: 'talk',
       },
     ],
   },
   {
     date: 'April 10',
-    theme: 'Social',
+    theme: 'Art and Design in the Digital World',
     schedule: [
       {
-        time: '11:00 AM - 12:00 PM',
-        title: 'Building a Digital Identity and a Web3 Profile on Farcaster',
+        time: 'Online',
+        title: 'Online Talk',
+        description: 'Phil Mohun (Founder, Bright Moments)',
+        type: 'talk',
+      },
+      {
+        time: '11:00 AM - 12:30 PM',
+        title: 'Tokenizing Artworks: NFTs for Artists and Designers',
+        description: 'With: Bright Moments, Nouns, Coinbase. Artists: 3. Max 30 people - Piazzetta',
         type: 'workshop',
       },
       {
-        time: '4:30 PM - 5:30 PM',
-        title: 'The Rise of Decentralized Social Networks',
+        time: '2:30 PM - 3:30 PM',
+        title: 'NFTs After the Hype: What Stays, What Matters',
+        description: 'Moderators: Jacopo, Alessia Cuccu, Deodato Salafia, An artist working with NFTs',
         type: 'talk',
       },
       {
         time: '5:30 PM - 6:30 PM',
-        title:
-          'From Followers to DAO Members: The Future of Digital Participation',
+        title: 'Immutable Aesthetics: The Rise of Onchain Art',
+        description: 'Moderators: Jacopo Ranalli (Founder, Slice), The 3 artists from the morning workshop',
         type: 'talk',
       },
     ],
@@ -114,7 +134,7 @@ export function Schedule() {
 
         <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
           On April 7-10, workshops take place in the morning (11 am-12 pm) while
-          talks in the afternoon (4:30-6:30 pm)
+          talks in the afternoon (5:30-6:30 pm)
         </p>
 
         <Tabs defaultValue="April 7" className="max-w-4xl mx-auto">
@@ -126,7 +146,6 @@ export function Schedule() {
                 className="text-center py-2"
               >
                 <span className="block text-sm font-medium">{day.date}</span>
-                <span className="block text-xs text-gray-500">{day.theme}</span>
               </TabsTrigger>
             ))}
           </TabsList>
@@ -144,9 +163,9 @@ export function Schedule() {
               </div>
 
               <div className="space-y-6">
-                {day.schedule.map((item, index) => (
+                {day.schedule.map((item) => (
                   <div
-                    key={index}
+                    key={`${day.date}-${item.time}-${item.title}`}
                     className={`p-4 rounded-lg ${item.type === 'workshop' ? 'bg-purple-50' : 'bg-blue-50'}`}
                   >
                     <div className="flex items-center mb-2">

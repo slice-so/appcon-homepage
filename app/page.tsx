@@ -33,7 +33,7 @@ export default function Page() {
         <footer className="border-t border-gray-200 backdrop-blur-sm bg-white/30">
           <div className="p-6 sm:px-10 flex items-center justify-between mx-auto max-w-screen-lg">
             <p className="text-gray-600 font-light tracking-wider">
-              Organized by{' '}
+              Hosted by{' '}
               <a
                 href="https://slice.so"
                 className="text-gray-900 font-semibold hover:text-purple-600"

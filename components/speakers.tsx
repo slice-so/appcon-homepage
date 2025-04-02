@@ -34,10 +34,10 @@ const speakers: Speaker[] = [
     company: 'Bright Moments',
   },
   {
-    name: 'Aneri',
-    role: 'Product Lead',
-    image: '/speakers/aneri.jpg',
-    company: 'Base',
+    name: 'Anon',
+    role: 'Product',
+    image: '/speakers/anon.webp',
+    company: '?',
   },
   {
     name: 'Limone',
@@ -57,7 +57,7 @@ export function Speakers() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {speakers.map((speaker, index) => (
             <div
-              key={index}
+              key={speaker.name}
               className="flex flex-col items-center p-6 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-200 hover:border-purple-200 transition-all duration-300"
             >
               <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden">
@@ -71,7 +71,6 @@ export function Speakers() {
               <h3 className="text-xl font-semibold text-gray-900">
                 {speaker.name}
               </h3>
-              <p className="text-purple-600 font-medium">{speaker.role}</p>
               <p className="text-gray-600 text-center">{speaker.company}</p>
             </div>
           ))}

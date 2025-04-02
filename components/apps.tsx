@@ -6,6 +6,7 @@ interface App {
   logo: string;
   href: string;
   description?: string;
+  imageClassName?: string;
 }
 
 interface AppCategory {
@@ -62,21 +63,21 @@ const appCategories: AppCategory[] = [
     ],
   },
   {
-    name: 'Privacy & Identity',
+    name: 'Identity & Privacy',
     description:
       'Learn about privacy in Ethereum and manage your digital identity',
     apps: [
-      {
-        name: 'Fluidkey',
-        logo: '/apps/fluidkey.png',
-        href: 'https://fluidkey.com',
-        description: 'Learn about privacy in Ethereum and stealth addresses',
-      },
       {
         name: 'Coinbase Wallet',
         logo: '/apps/cbw.png',
         href: 'https://www.coinbase.com/wallet',
         description: 'Onboarding, onramp, customer support',
+      },
+      {
+        name: 'Fluidkey',
+        logo: '/apps/fluidkey.png',
+        href: 'https://fluidkey.com',
+        description: 'Learn about privacy in Ethereum and stealth addresses',
       },
     ],
   },
@@ -101,15 +102,16 @@ const appCategories: AppCategory[] = [
     ],
   },
   {
-    name: 'Onboarding',
-    description: 'Essential tools for your Ethereum experience',
+    name: 'Commerce',
+    description: 'Shop, sell and trade onchain',
     apps: [
       {
         name: 'Slice',
-        logo: '/apps/cbw.png', // Placeholder - replace with actual Slice logo
+        logo: '/apps/slice.svg', 
         href: 'https://slice.so',
         description:
-          'Food, drinks and merch, with access to discounts based on POAPs',
+          'Food, drinks and merch, access discounts based on POAPs',
+        imageClassName: 'p-1',
       },
     ],
   },
@@ -149,7 +151,7 @@ export function Apps() {
                           src={app.logo}
                           alt={app.name}
                           fill
-                          className="object-contain rounded-xl"
+                          className={`object-contain rounded-xl ${app.imageClassName || ''}`}
                         />
                       </div>
                       <h4 className="text-lg font-medium text-gray-800 group-hover:text-purple-600 transition-colors">

@@ -20,9 +20,9 @@ export function Hero() {
             <p className="text-lg md:text-2xl bg-gradient-to-r from-[#4A5568] to-[#805AD5] bg-clip-text text-transparent font-light tracking-wide mt-2">
               Showing Ethereum Apps to the World
             </p>
-            <div className="text-base md:text-xl text-gray-600 flex items-center justify-center gap-1 mt-2">
+            <div className="text-lg md:text-2xl text-gray-600 flex items-center justify-center gap-1 mt-2">
               hosted by <span className="font-semibold">Slice</span>
-              <SliceLogo className="size-3" />
+              <SliceLogo className="size-3 md:size-4" />
             </div>
           </div>
         </div>

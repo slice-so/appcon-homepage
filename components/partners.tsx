@@ -16,6 +16,7 @@ const partners: Partner[] = [
   {
     name: 'Ethereum Foundation',
     logo: '/partners/eth.png',
+    customClassName: 'p-6', // padding just for ecosystem logo not for ethereum foundation logo
   },
   {
     name: 'Farcaster',
@@ -23,16 +24,15 @@ const partners: Partner[] = [
   },
   {
     name: 'Nouns',
-    logo: '/partners/nouns.svg',
-    customClassName: 'p-6',
+    logo: '/partners/nouns.png',
   },
 ];
 
 export function Partners() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full py-8 md:py-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  items-center justify-items-center">
           {partners.map((partner) => (
             <div key={partner.name} className="relative size-48">
               <Image
