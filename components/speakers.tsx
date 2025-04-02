@@ -1,51 +1,51 @@
-import Image from "next/image"
+import Image from 'next/image';
 
 interface Speaker {
-  name: string
-  role: string
-  image: string
-  company: string
+  name: string;
+  role: string;
+  image: string;
+  company: string;
 }
 
 const speakers: Speaker[] = [
   {
-    name: "Dan",
-    role: "Founder",
-    image: "/speakers/dan.png",
-    company: "Farcaster"
+    name: 'Dan',
+    role: 'Founder',
+    image: '/speakers/dan.png',
+    company: 'Farcaster',
   },
   {
-    name: "Chintan",
-    role: "Director",
-    image: "/speakers/chintan.jpg",
-    company: "Coinbase Wallet"
+    name: 'Chintan',
+    role: 'Director',
+    image: '/speakers/chintan.jpg',
+    company: 'Coinbase Wallet',
   },
 
   {
-    name: "Jacopo",
-    role: "Founder",
-    image: "/speakers/jacopo.jpg",
-    company: "Slice"
+    name: 'Jacopo',
+    role: 'Founder',
+    image: '/speakers/jacopo.jpg',
+    company: 'Slice',
   },
   {
-    name: "Phil",
-    role: "Founder",
-    image: "/speakers/phil.png",
-    company: "Bright Moments"
+    name: 'Phil',
+    role: 'Founder',
+    image: '/speakers/phil.png',
+    company: 'Bright Moments',
   },
   {
-    name: "Aneri",
-    role: "Product Lead",
-    image: "/speakers/aneri.jpg",
-    company: "Base"
+    name: 'Aneri',
+    role: 'Product Lead',
+    image: '/speakers/aneri.jpg',
+    company: 'Base',
   },
   {
-    name: "Limone",
-    role: "Ambassador",
-    image: "/speakers/limone.jpg",
-    company: "Farcaster"
-  }
-]
+    name: 'Limone',
+    role: 'Ambassador',
+    image: '/speakers/limone.jpg',
+    company: 'Farcaster',
+  },
+];
 
 export function Speakers() {
   return (
@@ -78,5 +78,5 @@ export function Speakers() {
         </div>
       </div>
     </section>
-  )
+  );
 }
