@@ -1,29 +1,29 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-	"vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
-	"files": {
-		"ignoreUnknown": false,
-		"ignore": [
-			"**/.next/**",
-			"**/.vercel/**",
-			"**/.turbo/**",
-			"**/.build/**",
-			"**/.output/**",
-			"**/.out/**",
-			"**/dist/**",
-			"**/generated/**"
-		]
-	},
-	"formatter": { "enabled": true },
-	"organizeImports": { "enabled": true },
-	"linter": { "enabled": true },
-	"javascript": {
-		"formatter": {
-			"jsxQuoteStyle": "double",
-			"trailingCommas": "none",
-			"semicolons": "asNeeded",
-			"quoteStyle": "double"
-		}
-	},
-	"json": { "formatter": { "trailingCommas": "none" } }
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": [
+      "**/.next/**",
+      "**/.vercel/**",
+      "**/.turbo/**",
+      "**/.build/**",
+      "**/.output/**",
+      "**/.out/**",
+      "**/dist/**",
+      "**/generated/**"
+    ]
+  },
+  "formatter": { "enabled": true },
+  "organizeImports": { "enabled": true },
+  "linter": { "enabled": true },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "trailingCommas": "none",
+      "semicolons": "asNeeded",
+      "quoteStyle": "double"
+    }
+  },
+  "json": { "formatter": { "trailingCommas": "none" } }
 }
