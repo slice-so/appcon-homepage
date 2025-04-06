@@ -1,6 +1,7 @@
 import { Apps } from "@/components/apps"
 import { EventOverview } from "@/components/eventOverview"
 import { Hero } from "@/components/hero"
+import { LanguageSwitcher } from "@/components/language-switcher"
 import Farcaster from "@/components/logo/farcaster"
 import SliceLogo from "@/components/logo/sliceLogo"
 import { Particles } from "@/components/particles"
@@ -32,18 +33,21 @@ export default function Page() {
 				{/* Footer */}
 				<footer className="border-t border-gray-200 backdrop-blur-sm bg-white/30">
 					<div className="p-6 sm:px-10 flex items-center justify-between mx-auto max-w-screen-lg">
-						<p className="text-gray-600 font-light tracking-wider">
-							Hosted by{" "}
-							<a
-								href="https://slice.so"
-								className="text-gray-900 font-semibold hover:text-purple-600"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Slice
-								<SliceLogo className="inline-block ml-1.5 size-3.5" />
-							</a>
-						</p>
+						<div className="flex items-center space-x-4">
+							<LanguageSwitcher />
+							<p className="text-gray-600 font-light tracking-wider">
+								Hosted by{" "}
+								<a
+									href="https://slice.so"
+									className="text-gray-900 font-semibold hover:text-purple-600"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Slice
+									<SliceLogo className="inline-block ml-1.5 size-3.5" />
+								</a>
+							</p>
+						</div>
 						<a
 							href="https://warpcast.com/~/channel/appcon"
 							className="group flex items-center gap-2 text-gray-600 transition-colors hover:text-purple-600"
