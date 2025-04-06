@@ -1,12 +1,12 @@
-import { Apps } from "@/components/apps"
-import { EventOverview } from "@/components/eventOverview"
-import { Hero } from "@/components/hero"
+import { Apps } from "@/components/apps-it"
+import { EventOverview } from "@/components/eventOverview-it"
+import { Hero } from "@/components/hero-it"
 import Farcaster from "@/components/logo/farcaster"
 import SliceLogo from "@/components/logo/sliceLogo"
 import { Particles } from "@/components/particles"
 import { Partners } from "@/components/partners"
-import { Schedule } from "@/components/schedule"
-import { Speakers } from "@/components/speakers"
+import { Schedule } from "@/components/schedule-it"
+import { Speakers } from "@/components/speakers-it"
 
 export default function Page() {
 	return (
@@ -33,7 +33,7 @@ export default function Page() {
 				<footer className="border-t border-gray-200 backdrop-blur-sm bg-white/30">
 					<div className="p-6 sm:px-10 flex items-center justify-between mx-auto max-w-screen-lg">
 						<p className="text-gray-600 font-light tracking-wider">
-							Hosted by{" "}
+							Organizzato da{" "}
 							<a
 								href="https://slice.so"
 								className="text-gray-900 font-semibold hover:text-purple-600"

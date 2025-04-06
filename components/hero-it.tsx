@@ -19,13 +19,13 @@ export function Hero() {
 						</h1>
 						<div className="text-lg md:text-2xl text-[#9568e8] flex items-center justify-end gap-2 w-full mt-3">
 							<p className="font-extralight text-2xl md:text-4xl">
-								hosted by <span className="font-bold">Slice</span>
+								organizzato da <span className="font-bold">Slice</span>
 							</p>
 							<SliceLogo className="size-5 md:size-6" />
 						</div>
 					</div>
 					<p className="text-xl md:text-4xl text-[#9568e8] font-light tracking-wide mt-12">
-						Showing Ethereum Apps to the World
+						Le applicazioni di Ethereum nel mondo
 					</p>
 				</div>
 			</div>

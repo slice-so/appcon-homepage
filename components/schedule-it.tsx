@@ -17,153 +17,152 @@ interface DaySchedule {
 
 const scheduleData: DaySchedule[] = [
 	{
-		date: "April 7",
+		date: "7 Aprile",
 		theme: "Ethereum: The World Computer",
 		schedule: [
 			{
-				time: "11:00 AM - 12:00 PM",
-				title: "Ethereum in the real world",
+				time: "11:00 - 12:00",
+				title: "Ethereum nel mondo reale",
 				description:
-					"Moderators: Jacopo Ranalli (Founder, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Founder, Urbe.eth)",
+					"Moderatori: Jacopo Ranalli (Fondatore, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Fondatore, Urbe.eth)",
 				type: "talk",
 				link: "https://lu.ma/ri1to44f"
 			},
 			{
-				time: "5:30 PM - 6:30 PM",
-				title: "Beyond Speculation: Ethereum apps",
+				time: "17:30 - 18:30",
+				title: "Oltre la Speculazione: App Ethereum",
 				description:
-					"Moderators: Jacopo Ranalli (Founder, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Founder, Urbe.eth)",
+					"Moderatori: Jacopo Ranalli (Fondatore, Slice), Lorenzo Patuzzo (Akasha), Simone Staffa (Fondatore, Urbe.eth)",
 				type: "talk",
 				link: "https://lu.ma/50tya0pk"
 			},
 			{
 				time: "6:30 PM - 7:30 PM",
-				title: "DIGITAL COMMONS. DESIGN, COMUNITA’ E BLOCKCHAIN",
-				description: "​The curators, artists and designers in the exhibition",
+				title: "DIGITAL COMMONS. DESIGN, COMUNITA' E BLOCKCHAIN",
+				description: "​I curatori, gli artisti e designer in mostra",
 				type: "talk",
 				link: "https://lu.ma/q5b6aj4j"
 			}
 		]
 	},
 	{
-		date: "April 8",
-		theme: "The Future of Commerce",
+		date: "8 Aprile",
+		theme: "Il Futuro del Commercio",
 		schedule: [
 			{
 				time: "Online",
-				title: "Online Talk",
+				title: "Talk Online",
 				description:
 					"Chintan Turakhia (Senior Director of Engineering, Coinbase)",
 				type: "talk"
 			},
 			{
-				time: "2:30 PM - 3:30 PM",
-				title: "The future of commerce is onchain",
-				description: "Moderator: Jacopo Ranalli (Founder, Slice)",
+				time: "11:00 - 12:00",
+				title: "Il futuro del commercio è onchain",
+				description: "Moderatore: Jacopo Ranalli (Fondatore, Slice)",
 				type: "talk",
 				link: "https://lu.ma/u9azu0vu"
 			},
 			{
-				time: "4:30 PM - 5:30 PM",
-				title: "Launch your onchain store with Slice",
+				time: "16:30 - 17:30",
+				title: "Lancia il tuo negozio onchain con Slice",
 				description:
-					"With: Slice / Jacopo, Coinbase and DUC. Max 30 people - Piazzetta",
+					"Con: Slice / Jacopo, Coinbase e DUC. Max 30 persone - Piazzetta",
 				type: "workshop",
 				link: "https://lu.ma/w9r8ijoi"
 			},
 			{
-				time: "5:30 PM - 6:30 PM",
-				title: "How real businesses are going onchain",
+				time: "17:30 - 18:30",
+				title: "Come le aziende reali stanno andando onchain",
 				description:
-					"Moderators: Jacopo Ranalli (Founder, Slice), Marco Tullio Giordano (Lawyer, 42LF), Merchants onboarded during the workshop",
+					"Moderatori: Jacopo Ranalli (Fondatore, Slice), Marco Tullio Giordano (Avvocato, 42LF), Commercianti onboardati durante il workshop",
 				type: "talk",
 				link: "https://lu.ma/fnbxlwq8"
 			}
 		]
 	},
 	{
-		date: "April 9",
-		theme: "Decentralized Socials and Digital Communities",
+		date: "9 Aprile",
+		theme: "Social Decentralizzati e Comunità Digitali",
 		schedule: [
 			{
 				time: "Online",
-				title: "Online Talks",
-				description: "Dan Romero (Founder, Farcaster)",
+				title: "Talk Online",
+				description: "Dan Romero (Fondatore, Farcaster)",
 				type: "talk"
 			},
 			{
-				time: "11:00 AM - 12:00 PM",
+				time: "11:00 - 12:00",
 				title:
-					"Building a Digital Identity on Farcaster, for designers and artists",
+					"Costruisci un'Identità Digitale su Farcaster, per designer e artisti",
 				description:
-					"With: Farcaster / Simone Staffa. Max 30 people - Piazzetta",
+					"Con: Farcaster / Simone Staffa. Max 30 persone - Piazzetta",
 				type: "workshop",
 				link: "https://lu.ma/9epfl0xc"
 			},
 			{
-				time: "2:30 PM - 3:30 PM",
-				title: "The Rise of Decentralized Social Networks",
+				time: "14:30 - 15:30",
+				title: "L'Ascesa dei Social Network Decentralizzati",
 				description:
-					"Moderators: Simone Staffa (Founder, Urbe.eth), Lorenzo Patuzzo (Akasha)",
+					"Moderatori: Simone Staffa (Fondatore, Urbe.eth), Lorenzo Patuzzo (Akasha)",
 				type: "talk",
 				link: "https://lu.ma/bkqzxpwu"
 			},
 			{
-				time: "5:30 PM - 6:30 PM",
-				title:
-					"From Followers to DAO Members: The Future of Digital Participation",
+				time: "17:30 - 18:30",
+				title: "Comunità Digitali e Governance",
 				description:
-					"Moderators: fattybuthappy (Nouns), 0XBA5ED (Juicebox), Lorenzo Patuzzo (Web3 community representative)",
+					"Moderatori: Simone Staffa (Fondatore, Urbe.eth), Lorenzo Patuzzo (Akasha)",
 				type: "talk",
 				link: "https://lu.ma/cw4fymgb"
 			}
 		]
 	},
 	{
-		date: "April 10",
-		theme: "Art and Design in the Digital World",
+		date: "10 Aprile",
+		theme: "Arte e Design nel Mondo Digitale",
 		schedule: [
 			{
 				time: "Online",
-				title: "Online Talk",
-				description: "Phil Mohun (Founder, Bright Moments)",
+				title: "Talk Online",
+				description: "Phil Mohun (Fondatore, Bright Moments)",
 				type: "talk"
 			},
 			{
-				time: "11:00 AM - 12:30 PM",
-				title: "Tokenizing Artworks: NFTs for Artists and Designers",
+				time: "11:00 - 12:30",
+				title: "Tokenizzazione delle Opere d'Arte: NFT per Artisti e Designer",
 				description:
-					"With: Bright Moments, Nouns, Coinbase. Artists: 3. Max 30 people - Piazzetta",
+					"Con: Bright Moments, Nouns, Coinbase. Artisti: 3. Max 30 persone - Piazzetta",
 				type: "workshop",
 				link: "https://lu.ma/1f4ju8e9"
 			},
 			{
-				time: "2:30 PM - 3:30 PM",
-				title: "NFTs After the Hype: What Stays, What Matters",
+				time: "14:30 - 15:30",
+				title: "NFT Dopo l'Hype: Cosa Rimane, Cosa Conta",
 				description:
-					"Moderators: Jacopo, Alessia Cuccu, Deodato Salafia, An artist working with NFTs",
+					"Moderatori: Jacopo, Alessia Cuccu, Deodato Salafia, Un artista che lavora con gli NFT",
 				type: "talk",
 				link: "https://lu.ma/lljjkwpi"
 			},
 			{
-				time: "5:30 PM - 6:30 PM",
-				title: "Immutable Aesthetics: The Rise of Onchain Art",
+				time: "17:30 - 18:30",
+				title: "Estetica Immutabile: L'Ascesa dell'Arte Onchain",
 				description:
-					"Moderators: Jacopo Ranalli (Founder, Slice), The 3 artists from the morning workshop",
+					"Moderatori: Jacopo Ranalli (Fondatore, Slice), I 3 artisti del workshop mattutino",
 				type: "talk",
 				link: "https://lu.ma/t1c20h8z"
 			}
 		]
 	},
 	{
-		date: "April 12",
+		date: "12 Aprile",
 		theme: "Hangout",
 		schedule: [
 			{
-				time: "4:00 PM - 8:00 PM",
-				title: "Farcaster meetup",
+				time: "16:00 - 20:00",
+				title: "Meetup Farcaster",
 				description:
-					"Join us for a casual evening of conversation and networking with the Farcaster community. This is a great opportunity to meet new people, share your ideas, and learn more about Farcaster.",
+					"Unisciti a noi per una serata informale di conversazione e networking con la comunità Farcaster. Questa è un'ottima opportunità per incontrare nuove persone, condividere le tue idee e saperne di più su Farcaster.",
 				type: "meetup",
 				link: "https://lu.ma/g6sg7val?tk=ghHIgD"
 			}
@@ -176,10 +175,10 @@ export function Schedule() {
 		<section className="w-full py-16 bg-white/70">
 			<div className="container mx-auto">
 				<h2 className="text-3xl md:text-4xl font-bold text-center mb-8 bg-gradient-to-r from-[#4A5568] to-[#805AD5] bg-clip-text text-transparent">
-					Workshops & Talks
+					Programma
 				</h2>
 
-				<Tabs defaultValue="April 7" className="max-w-4xl mx-auto">
+				<Tabs defaultValue="7 Aprile" className="w-full max-w-6xl mx-auto">
 					<TabsList className="grid grid-cols-5 mb-8">
 						{scheduleData.map((day) => (
 							<TabsTrigger
