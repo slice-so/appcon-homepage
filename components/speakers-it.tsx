@@ -20,18 +20,17 @@ const speakers: Speaker[] = [
 		image: "/speakers/chintan.jpg",
 		company: "Coinbase Wallet"
 	},
-
-	{
-		name: "Jacopo",
-		role: "Fondatore",
-		image: "/speakers/jacopo.jpg",
-		company: "Slice"
-	},
 	{
 		name: "Phil",
 		role: "Fondatore",
 		image: "/speakers/phil.png",
 		company: "Bright Moments"
+	},
+	{
+		name: "Jacopo",
+		role: "Fondatore",
+		image: "/speakers/jacopo.jpg",
+		company: "Slice"
 	},
 	{
 		name: "Limone",
