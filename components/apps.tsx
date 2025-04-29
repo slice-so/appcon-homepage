@@ -58,7 +58,7 @@ const appCategories: AppCategory[] = [
 			{
 				name: "Rodeo",
 				logo: "/apps/rodeo.webp",
-				href: "https://rodeo.finance",
+				href: "https://rodeo.club",
 				description: "Social network for artists and creatives"
 			}
 		]
@@ -90,7 +90,7 @@ const appCategories: AppCategory[] = [
 			{
 				name: "Nounswap",
 				logo: "/apps/nounswap.jpg",
-				href: "https://nounswap.xyz",
+				href: "https://nounswap.wtf",
 				description: "Explore nouns ecosystem"
 			},
 			{
